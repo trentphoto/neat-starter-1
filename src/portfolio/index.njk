@@ -1,0 +1,14 @@
+---
+layout: "layouts/base.njk"
+title: "Portfolio"
+---
+
+<h1>Portfolio</h1>
+
+
+<ul>
+    {%- for blog in blogposts.data -%}
+      <li>{{ blog.attributes.Title }}</li>
+    {%- endfor -%}
+</ul>
+     

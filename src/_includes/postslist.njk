@@ -1,0 +1,7 @@
+<ol>
+    {% for post in collections.post %}
+        <li class="portfoliocard">
+            <a href="{{ post.url }}">{{ post.data.title }}: {{ post.data.subtitle }}</a>
+        </li>
+    {% endfor %}
+</ol>

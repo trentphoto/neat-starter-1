@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ metadata.title }}</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic,900,900italic%7COpen+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7COswald:200,300,400,500,600,700%7CLato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CPlayfair+Display:regular,italic%7CImbue:regular%7CCinzel:regular,500%7CPlayfair+Display:regular,700,900" media="all">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+        <link href="/static/img/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+        <link href="/static/img/webclip.jpg" rel="apple-touch-icon">
+    </head>
+    <body>
+        {% include "partials/header.njk" %}
+
+        <main>{{ content | safe }}</main>
+        
+        {% include "partials/cta1.njk" %}
+
+        {% include "partials/socket.njk" %}
+
+    </body>
+</html>
